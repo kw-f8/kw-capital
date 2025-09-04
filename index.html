@@ -8,51 +8,51 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Startposition oben, um Leerraum zu schaffen */
+            justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
             font-family: sans-serif;
             text-align: center;
-            background-color: #F8F8F8; /* Helles Grau, passend zum Logo */
-            padding-top: 15vh; /* Abstand vom oberen Rand */
-            box-sizing: border-box; /* Padding wird in die Höhe eingerechnet */
+            background-color: #F8F8F8;
+        }
+        .logo-container {
+            padding: 50px;
         }
         .logo {
-            max-width: 350px; /* Standardgröße für Desktop, etwas größer als zuvor */
+            max-width: 500px;
             height: auto;
-            margin-bottom: 30px; /* Abstand zur E-Mail-Adresse */
+            margin-bottom: 30px; 
         }
         .email-link {
             color: #333;
             text-decoration: none;
-            font-size: 1.5em; /* E-Mail-Adresse gut lesbar */
+            font-size: 1.5em; 
             font-weight: bold;
-            padding: 10px 20px; /* Etwas Polsterung für den Link */
-            border-radius: 5px; /* Leichte Rundung */
-            transition: background-color 0.3s ease; /* Sanfter Übergang beim Hover */
+            padding: 10px 20px;
+            border-radius: 5px; 
+            transition: background-color 0.3s ease;
         }
         .email-link:hover {
-            background-color: rgba(0, 0, 0, 0.05); /* Leichte Hintergrundfarbe beim Hover */
+            background-color: rgba(0, 0, 0, 0.05);
         }
 
         /* Responsive Anpassungen für Bildschirme bis 600px Breite (Handys) */
         @media (max-width: 600px) {
-            body {
-                padding-top: 10vh; /* Etwas weniger Abstand oben für Handys */
-            }
             .logo {
-                max-width: 80%; /* Logo nimmt 80% der Bildschirmbreite ein */
-                margin-bottom: 25px; /* Abstand zur E-Mail-Adresse auf Handys */
+                max-width: 90%;
+                margin-bottom: 20px;
             }
             .email-link {
-                font-size: 1.1em; /* E-Mail-Adresse auf Handys etwas kleiner */
+                font-size: 1.2em;
             }
         }
     </style>
 </head>
 <body>
-    <img src="dein-logo.png" alt="KW Capital Logo" class="logo">
+    <div class="logo-container">
+        <img src="dein-logo.png" alt="KW Capital Logo" class="logo">
+    </div>
     <a href="mailto:info@kw-capital.de" class="email-link">info@kw-capital.de</a>
 </body>
 </html>
