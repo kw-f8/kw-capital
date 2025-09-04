@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>KW-Capital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>KW Capital</title>
     <style>
         body {
             display: flex;
@@ -16,20 +16,31 @@
             background-color: #F8F8F8; /* Helles Grau, passend zum Logo */
         }
         .logo {
-            max-width: 500px; /* Logo vergrößert */
+            max-width: 500px; 
             height: auto;
-            margin-bottom: 40px; /* Abstand zur E-Mail-Adresse vergrößert */
+            margin-bottom: 40px; 
         }
         .email-link {
             color: #333;
             text-decoration: none;
-            font-size: 1.5em; /* E-Mail-Adresse vergrößert */
+            font-size: 1.5em; 
             font-weight: bold;
+        }
+
+        /* Neue Regeln für kleinere Bildschirme */
+        @media (max-width: 600px) {
+            .logo {
+                max-width: 80%; /* Logo auf Handys vergrößern */
+                margin-bottom: 20px; /* Abstand verringern */
+            }
+            .email-link {
+                font-size: 1.2em; /* E-Mail-Adresse auf Handys verkleinern */
+            }
         }
     </style>
 </head>
 <body>
-    <img src="dein-logo.png" alt="dein-logo.png" class="logo">
+    <img src="IMG_1576.JPG" alt="KW Capital Logo" class="logo">
     <a href="mailto:info@kw-capital.de" class="email-link">info@kw-capital.de</a>
 </body>
 </html>
